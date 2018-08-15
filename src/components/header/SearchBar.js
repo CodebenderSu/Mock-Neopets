@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SearchBar extends Component {
   render() {
     return (
       <div className="search">
-      <form>
-        <input type="hidden" value="" />
-        <input autocomplete="on" name="q" placeholder="Search Neopets"
-              required="required"  type="text" title="" />
-        <i type="submit" class="fas fa-search"></i>
-      </form>
+        <form>
+          <input autocomplete="on" name="search" placeholder="Search Neopets"
+                 type="text" title="" />
+          <button type="submit">
+            <FontAwesomeIcon icon="search" />
+          </button>
+        </form>
       </div>
     );
   }

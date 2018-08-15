@@ -10,7 +10,7 @@ class Header extends Component {
       <div className="header-master">
         <div className="header-container">
           <div className="header-left">
-            <a href=""><img src={logo} alt="Neopets" title="Neopets Home"/></a>
+            <a href=""><img src={logo} alt="Neopets" /></a>
           </div>
           <div className="header-center">
             <Navigation />

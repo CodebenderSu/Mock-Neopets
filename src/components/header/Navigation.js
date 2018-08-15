@@ -1,39 +1,40 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-        <span>
-          <a href="" title="Account">
-            <i class="fas fa-user-circle"></i>
-            Account
+        <div>
+          <a href="" className="nav-item">
+            <FontAwesomeIcon className="nav-icon" icon="user-circle" />
+            <span>Account</span>
           </a>
-        </span>
-        <span>
-          <a href="" title="Explore">
-            <i class="fas fa-globe-asia"></i>
-            Explore
+        </div>
+        <div>
+          <a href="" className="nav-item">
+            <FontAwesomeIcon className="nav-icon" icon="globe" />
+            <span>Explore</span>
           </a>
-        </span>
-        <span>
-          <a href="" title="Games">
-            <i class="fas fa-dice"></i>
-            Games
+        </div>
+        <div>
+          <a href="" className="nav-item">
+            <FontAwesomeIcon className="nav-icon" icon="dice" />
+            <span>Games</span>
           </a>
-        </span>
-        <span>
-          <a href="" title="Shops">
-            <i class="fas fa-store"></i>
-            Shops
+        </div>
+        <div>
+          <a href="" className="nav-item">
+            <FontAwesomeIcon className="nav-icon" icon="store" />
+            <span>Shops</span>
           </a>
-        </span>
-        <span>
-          <a href="" title="Community">
-            <i class="fas fa-users"></i>
-            Community
+        </div>
+        <div>
+          <a href="" className="nav-item">
+            <FontAwesomeIcon className="nav-icon" icon="users" />
+            <span>Community</span>
           </a>
-        </span>
+        </div>
       </div>
     );
   }
