@@ -1,0 +1,148 @@
+$font: 'Roboto Slab', serif;
+$border-color: #bbb;
+$content-color: #eee;
+$label-color: hsl(47deg, 100%, 57%);
+$link-color: hsl(212deg, 61%, 42%);
+$hover-color: hsl(47deg, 100%, 42%);
+
+@mixin border {
+  border: 1px solid $border-color;
+  border-radius: 3px;
+}
+
+.left-bar {
+  width: 31%;
+  top: 68px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.right-bar {
+  width: 31%;
+  top: 68px;
+  left: 69%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.card {
+  @include border;
+  width: 200px;
+  margin: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  font-family: $font;
+  background-color: $content-color;
+}
+.card-label {
+  @include border;
+  width: 100%;
+  margin: 0;
+  background-color: hsl(47deg, 100%, 57%);
+  border-left: none;
+  border-right: none;
+  font-size: 16px;
+  font-weight: bold;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+.card-content {
+  width: 100%;
+  font-size: 12px;
+  line-height: 18px;
+
+  a:link, a:visited {
+    text-decoration: none;
+    color: $link-color;
+  }
+  a:hover, a:active {
+    color: $hover-color;
+  }
+  hr {
+    width: 190px;
+    color: $border-color;
+  }
+}
+.sub-label {
+  margin: 5px;
+  font-size: 14px!important;
+}
+.icon {
+  color: black!important;
+}
+/* AVATAR SECTION */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-photo {
+  @include border;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #ccc;
+}
+.change-avatar {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $content-color;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.avatar-photo:hover .change-avatar {
+  visibility: visible!important;
+  cursor: pointer;
+}
+/* PET SECTION */
+.pet-photo {
+  @include border;
+  width: 188px;
+  height: 188px;
+  margin: 5px;
+  background-color: #ccc;
+
+  img {
+    width: 188px;
+    height: 188px;
+    cursor: pointer;
+  }
+}
+.pet-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 50%;
+    margin: 0 2px;
+  }
+  .stats-left {
+    text-align: right;
+  }
+  .stats-right {
+    text-align: left;
+  }
+}
+.pet-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

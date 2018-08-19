@@ -1,0 +1,53 @@
+.home-master {
+  width: 38%;
+  margin: 10px 31%;
+  top: 58px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-top: none;
+  border-radius: 3px;
+}
+.carousel {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+.panels {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.events {
+  width: 60%;
+  height: 250px;
+  margin: 0 10px 0 20px;
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+.new {
+  width: 40%;
+  height: 250px;
+  margin: 0 20px 0 10px;
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+.old-news {
+  width: 95%;
+  height: 200px;
+  margin: 10px 20px;
+  background-color: #ccc;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}

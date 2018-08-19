@@ -1,0 +1,17 @@
+{
+  "Account": {
+    "Username": "Zezima",
+    "Neopoints": "2,147,483,647"
+  },
+  "Pet": {
+    "Name": "Rytlock",
+    "Species": "Xweetok",
+    "Health": "989",
+    "HealthMax": "999",
+    "Mood": "grumpy",
+    "Hunger": "fine",
+    "Age": "6,899",
+    "Level": "80"
+  },
+  "Friends": ["Dan", "Arin", "Markiplier"]
+}

@@ -1,0 +1,112 @@
+/* Sass Variables */
+$base-color: hsl(47deg, 100%, 57%);
+$border-color: hsl(47deg, 100%, 47%);
+$clock-color: hsl(47deg, 100%, 77%);
+$search-color: hsl(47deg, 100%, 77%);
+
+.header-master {
+  background-color: $base-color;
+  min-height: 50px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  border-bottom: 3px solid $border-color;
+  z-index: 5;
+}
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-height: 50px;
+    overflow: hidden;
+  }
+}
+.header-left {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-center {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navigation {
+  padding: 0 10px;
+  display: flex;
+}
+.nav-item {
+  margin: 0 10px;
+  position: relative;
+  display: inline-block;
+
+  span {
+    visibility: hidden;
+    position: absolute;
+    width: 75px;
+    text-align: center;
+    font-size: 13px;
+    background-color: #ddd;
+    border: 1px solid black;
+    border-radius: 10px;
+    top: 170%;
+    left: 50%;
+    padding: 5px;
+    margin-left: -45px;
+    transition-delay: .2s;
+    z-index: 10;
+  }
+
+  span::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+}
+.nav-item:hover span {
+  visibility: visible;
+}
+.nav-icon {
+  font-size: 26px;
+  color: black;
+}
+.clock {
+  font-size: 11px;
+  border-left: 2px solid $border-color;
+  padding: 10px 5px;
+}
+.search {
+  font-size: 14px;
+  background-color: $search-color;
+  padding: 5px;
+  border: 1px solid $border-color;
+  border-radius: 25px;
+
+  input {
+    background-color: $search-color;
+    border: none;
+    padding: 0 5px;
+  }
+
+  button {
+    background-color: $search-color;
+    border: none;
+    cursor: pointer;
+  }
+}
