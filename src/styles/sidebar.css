@@ -1,7 +1,5 @@
 .left-bar {
   width: 31%;
-  top: 68px;
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -9,9 +7,6 @@
 
 .right-bar {
   width: 31%;
-  top: 68px;
-  left: 69%;
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -43,6 +38,9 @@
   .card-label a {
     color: black;
     text-decoration: none; }
+  .card-label .icon {
+    float: right;
+    margin: 3px; }
 
 .card-content {
   width: 100%;
@@ -59,10 +57,14 @@
 
 .sub-label {
   margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   font-size: 14px !important; }
 
 .icon {
-  color: black !important; }
+  color: black !important;
+  cursor: pointer; }
 
 /* AVATAR SECTION */
 .avatar {
@@ -76,7 +78,7 @@
   width: 50px;
   height: 50px;
   margin: 5px;
-  background-color: #ccc; }
+  background-color: #ddd; }
 
 .change-avatar {
   width: 50px;
@@ -103,7 +105,7 @@
   width: 188px;
   height: 188px;
   margin: 5px;
-  background-color: #ccc; }
+  background-color: #ddd; }
   .pet-photo img {
     width: 188px;
     height: 188px;
@@ -121,7 +123,77 @@
   .pet-stats .stats-right {
     text-align: left; }
 
-.pet-links {
+.friend {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: center;
+  background-color: #ddd; }
+
+.friend-avatar {
+  margin: 0 5px 0 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .friend-avatar img, .friend-avatar a {
+    width: 50px;
+    height: 50px; }
+
+.friend-info {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc; }
+  .friend-info h1 {
+    font-size: 14px;
+    margin: 0; }
+    .friend-info h1 a {
+      color: #000 !important; }
+
+.games {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.games-item {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px 5px 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  font-size: 11px; }
+  .games-item img {
+    max-width: 40px;
+    max-height: 40px; }
+
+.ad-space {
+  max-width: 200px;
+  max-height: 320px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .ad-space img, .ad-space a {
+    width: 200px;
+    height: 135px;
+    object-fit: cover;
+    background-color: #ddd;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888; }
+  .ad-space span {
+    font-size: 10px; }
+
+.footer {
+  padding: 5px; }

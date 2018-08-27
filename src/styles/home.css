@@ -1,8 +1,5 @@
 .home-master {
   width: 38%;
-  margin: 10px 31%;
-  top: 58px;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

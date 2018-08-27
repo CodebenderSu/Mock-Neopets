@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PetStats from './PetStats';
 import pet from '../../assets/pet.jpg';
 import { Pet } from '../../data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,26 +16,9 @@ class PetCard extends Component {
             <img src={pet} alt="pet" />
           </div>
           <hr />
-          <div className="pet-stats">
-            <div className="stats-left">
-              Species: <br />
-              Health: <br />
-              Mood: <br />
-              Hunger: <br />
-              Age: <br />
-              Level:
-            </div>
-            <div className="stats-right">
-              <b>{Pet.Species}</b><br />
-              <b>{Pet.Health} / {Pet.HealthMax}</b><br />
-              <b>{Pet.Mood}</b><br />
-              <b>{Pet.Hunger}</b><br />
-              <b>{Pet.Age} days</b><br />
-              <b>{Pet.Level}</b>
-            </div>
-          </div>
+          <PetStats />
           <hr />
-          <div className="pet-links sub-label">
+          <div className="sub-label">
             <a href="">
               <FontAwesomeIcon className="icon" icon="paw" />
               {} Pets

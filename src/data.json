@@ -1,6 +1,7 @@
 {
   "Account": {
     "Username": "Zezima",
+    "Avatar": "/avatar.gif",
     "Neopoints": "2,147,483,647"
   },
   "Pet": {
@@ -13,5 +14,52 @@
     "Age": "6,899",
     "Level": "80"
   },
-  "Friends": ["Dan", "Arin", "Markiplier"]
+  "Friends": [
+    {
+      "Name": "Dan",
+      "Status": true,
+      "Avatar": "/angryairmote.gif"
+    },
+    {
+      "Name": "Arin",
+      "Status": true,
+      "Avatar": "/kingkelpbeard.gif"
+    },
+    {
+      "Name": "Durial321",
+      "Status": false,
+      "Avatar": "/ghostlupe.gif"
+    },
+    {
+      "Name": "Markiplier",
+      "Status": true,
+      "Avatar": "/gelertstarry.gif"
+    }
+  ],
+  "Games": [
+    {
+      "Name": "Destruct-O-Match III",
+      "Avatar": "/destructomatch.png"
+    },
+    {
+      "Name": "Kass Basher",
+      "Avatar": "/kassbasher.png"
+    },
+    {
+      "Name": "Fashion Fever",
+      "Avatar": "/fashionfever.png"
+    },
+    {
+      "Name": "Jelly Blobs of Doom",
+      "Avatar": "/jellyblob.png"
+    },
+    {
+      "Name": "Smug Bug Smite",
+      "Avatar": "/smugbugsmite.png"
+    },
+    {
+      "Name": "Splat-A-Sloth",
+      "Avatar": "/splatasloth.png"
+    }
+  ]
 }

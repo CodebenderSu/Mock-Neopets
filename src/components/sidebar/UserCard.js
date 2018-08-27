@@ -34,7 +34,7 @@ class UserCard extends Component {
             </div>
           </div>
           <div className="sub-label">
-            <b>NP:</b> {Account.Neopoints}
+            <span><b>NP:</b> {Account.Neopoints}</span>
           </div>
         </div>
       </div>

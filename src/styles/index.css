@@ -4,3 +4,10 @@ body {
   font-family: sans-serif;
   background-color: #ddd;
 }
+.content {
+  top: 68px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}

@@ -6,7 +6,7 @@ class SearchBar extends Component {
     return (
       <div className="search">
         <form>
-          <input autocomplete="on" name="search" placeholder="Search Neopets"
+          <input autoComplete="on" name="search" placeholder="Search Neopets"
                  type="text" title="" />
           <button type="submit">
             <FontAwesomeIcon icon="search" />
