@@ -1,14 +1,15 @@
 {
   "Account": {
     "Username": "Zezima",
-    "Avatar": "/avatar.gif",
+    "Avatar": "https://codebendersu.github.io/Mock-Neopets/user/wealthy.gif",
     "Neopoints": "2,147,483,647"
   },
   "Pet": {
+    "Avatar": "https://codebendersu.github.io/Mock-Neopets/user/pet.jpg",
     "Name": "Rytlock",
     "Species": "Xweetok",
-    "Health": "989",
-    "HealthMax": "999",
+    "Health": 666,
+    "HealthMax": 999,
     "Mood": "grumpy",
     "Hunger": "fine",
     "Age": "6,899",
@@ -18,48 +19,48 @@
     {
       "Name": "Dan",
       "Status": true,
-      "Avatar": "/angryairmote.gif"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/avatars/angryairmote.gif"
     },
     {
       "Name": "Arin",
       "Status": true,
-      "Avatar": "/kingkelpbeard.gif"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/avatars/kingkelpbeard.gif"
     },
     {
       "Name": "Durial321",
       "Status": false,
-      "Avatar": "/ghostlupe.gif"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/avatars/ghostlupe.gif"
     },
     {
       "Name": "Markiplier",
       "Status": true,
-      "Avatar": "/gelertstarry.gif"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/avatars/gelertstarry.gif"
     }
   ],
   "Games": [
     {
       "Name": "Destruct-O-Match III",
-      "Avatar": "/destructomatch.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/destructomatch.png"
     },
     {
       "Name": "Kass Basher",
-      "Avatar": "/kassbasher.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/kassbasher.png"
     },
     {
       "Name": "Fashion Fever",
-      "Avatar": "/fashionfever.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/fashionfever.png"
     },
     {
       "Name": "Jelly Blobs of Doom",
-      "Avatar": "/jellyblob.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/jellyblob.png"
     },
     {
       "Name": "Smug Bug Smite",
-      "Avatar": "/smugbugsmite.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/smugbugsmite.png"
     },
     {
       "Name": "Splat-A-Sloth",
-      "Avatar": "/splatasloth.png"
+      "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/splatasloth.png"
     }
   ]
 }

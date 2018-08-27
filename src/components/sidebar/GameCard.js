@@ -22,7 +22,7 @@ class GameCard extends Component {
 
           </div>
           <hr />
-          <div className="sub-label">
+          <div className="card-subtitle">
             <a href="">
               <FontAwesomeIcon className="icon" icon="gamepad" />
               {} All games

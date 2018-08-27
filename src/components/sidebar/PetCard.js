@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PetStats from './PetStats';
-import pet from '../../assets/pet.jpg';
 import { Pet } from '../../data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -13,12 +12,12 @@ class PetCard extends Component {
         </div>
         <div className="card-content">
           <div className="pet-photo">
-            <img src={pet} alt="pet" />
+            <img src={Pet.Avatar} alt="pet" />
           </div>
           <hr />
           <PetStats />
           <hr />
-          <div className="sub-label">
+          <div className="card-subtitle">
             <a href="">
               <FontAwesomeIcon className="icon" icon="paw" />
               {} Pets

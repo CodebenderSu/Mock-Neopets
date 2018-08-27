@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Friend from './Friend';
 import { Friends } from '../../data.json';
-import angryairmote from '../../assets/angryairmote.gif';
-import gelertstarry from '../../assets/gelertstarry.gif';
-import kingkelpbeard from '../../assets/kingkelpbeard.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class FriendCard extends Component {
@@ -26,9 +23,9 @@ class FriendCard extends Component {
         <div>
           <span>These Neofriends are currently online!</span>
           <hr />
-          <Friend avatar={angryairmote} username={Friends[0].Name} />
-          <Friend avatar={kingkelpbeard} username={Friends[1].Name} />
-          <Friend avatar={gelertstarry} username={Friends[3].Name} />
+          <Friend avatar={Friends[0].Avatar} username={Friends[0].Name} />
+          <Friend avatar={Friends[1].Avatar} username={Friends[1].Name} />
+          <Friend avatar={Friends[3].Avatar} username={Friends[3].Name} />
         </div>;
       button = <FontAwesomeIcon className="icon" icon="caret-square-up"
           onClick={this.handleClick} />;
@@ -47,7 +44,7 @@ class FriendCard extends Component {
         <div className="card-content">
           {drawer}
           <hr />
-          <div className="sub-label">
+          <div className="card-subtitle">
             <a href="">
               <FontAwesomeIcon className="icon" icon="users" />
               {} Neofriends

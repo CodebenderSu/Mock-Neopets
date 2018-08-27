@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import avatar from '../../assets/avatar.gif';
 import { Account } from '../../data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,7 +13,7 @@ class UserCard extends Component {
           <div className="avatar">
             <div className="avatar-photo">
               <span className="change-avatar">Change</span>
-              <img src={avatar} alt="avatar" title="I'm rich, you know" />
+              <img src={Account.Avatar} alt="avatar" title="I'm rich, you know" />
             </div>
             <div className="peripherals">
               <a href="">
@@ -33,7 +32,7 @@ class UserCard extends Component {
               </a>
             </div>
           </div>
-          <div className="sub-label">
+          <div className="card-subtitle">
             <span><b>NP:</b> {Account.Neopoints}</span>
           </div>
         </div>

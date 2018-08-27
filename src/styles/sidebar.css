@@ -1,11 +1,11 @@
-.left-bar {
+.left-margin {
   width: 31%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center; }
 
-.right-bar {
+.right-margin {
   width: 31%;
   display: flex;
   flex-direction: column;
@@ -15,58 +15,57 @@
 .card {
   border: 1px solid #bbb;
   border-radius: 3px;
+  background-color: #eee;
   width: 200px;
   margin: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  background-color: #eee; }
-
-.card-label {
-  border: 1px solid #bbb;
-  border-radius: 3px;
-  width: 100%;
-  margin: 0;
-  background-color: #ffcf24;
-  border-left: none;
-  border-right: none;
-  font-size: 16px;
-  font-weight: bold; }
-  .card-label a {
-    color: black;
-    text-decoration: none; }
-  .card-label .icon {
-    float: right;
-    margin: 3px; }
+  text-align: center; }
 
 .card-content {
-  width: 100%;
+  font-family: "Roboto Slab", serif;
   font-size: 12px;
-  line-height: 18px; }
+  width: 100%; }
   .card-content a:link, .card-content a:visited {
     text-decoration: none;
     color: #2a67ac; }
   .card-content a:hover, .card-content a:active {
     color: #d6a800; }
   .card-content hr {
-    width: 190px;
-    color: #bbb; }
+    width: 190px; }
 
-.sub-label {
+.card-label {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  background-color: #ffcf24;
+  width: 100%;
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  font-weight: bold; }
+  .card-label a {
+    color: #000;
+    text-decoration: none; }
+  .card-label .icon {
+    float: right;
+    margin: 3px; }
+
+.card-subtitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
   margin: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  font-size: 14px !important; }
+  justify-content: space-around; }
 
 .icon {
-  color: black !important;
+  color: #000;
   cursor: pointer; }
 
-/* AVATAR SECTION */
 .avatar {
   display: flex;
   align-items: center;
@@ -75,12 +74,16 @@
 .avatar-photo {
   border: 1px solid #bbb;
   border-radius: 3px;
+  background-color: #ccc;
   width: 50px;
   height: 50px;
-  margin: 5px;
-  background-color: #ddd; }
+  margin: 5px; }
 
 .change-avatar {
+  font-family: "Roboto Slab", serif;
+  font-size: 10px;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 50px;
   height: 50px;
   margin: 1px;
@@ -89,23 +92,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #eee;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.4); }
+  font-weight: bold; }
 
 .avatar-photo:hover .change-avatar {
   visibility: visible !important;
   cursor: pointer; }
 
-/* PET SECTION */
 .pet-photo {
   border: 1px solid #bbb;
   border-radius: 3px;
+  background-color: #ccc;
   width: 188px;
   height: 188px;
-  margin: 5px;
-  background-color: #ddd; }
+  margin: 5px; }
   .pet-photo img {
     width: 188px;
     height: 188px;
@@ -123,15 +122,24 @@
   .pet-stats .stats-right {
     text-align: left; }
 
+.green {
+  color: green !important; }
+
+.yellow {
+  color: yellow !important; }
+
+.red {
+  color: red !important; }
+
 .friend {
   border: 1px solid #bbb;
   border-radius: 3px;
+  background-color: #ddd;
   margin: 10px;
   padding: 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #ddd; }
+  justify-content: center; }
 
 .friend-avatar {
   margin: 0 5px 0 0;
@@ -144,13 +152,14 @@
     height: 50px; }
 
 .friend-info {
+  background-color: #ccc;
   flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ccc; }
+  justify-content: center; }
   .friend-info h1 {
+    font-family: "Roboto Slab", serif;
     font-size: 14px;
     margin: 0; }
     .friend-info h1 a {
@@ -166,13 +175,12 @@
 .games-item {
   border: 1px solid #bbb;
   border-radius: 3px;
+  background-color: #ddd;
   margin: 5px;
   padding: 5px 5px 1px 5px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #ddd;
-  font-size: 11px; }
+  justify-content: center; }
   .games-item img {
     max-width: 40px;
     max-height: 40px; }
@@ -186,13 +194,14 @@
   align-items: center;
   justify-content: center; }
   .ad-space img, .ad-space a {
+    background-color: #ccc;
     width: 200px;
     height: 135px;
     object-fit: cover;
-    background-color: #ddd;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888; }
   .ad-space span {
+    font-family: "Roboto Slab", serif;
     font-size: 10px; }
 
 .footer {

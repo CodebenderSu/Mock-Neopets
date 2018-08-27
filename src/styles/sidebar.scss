@@ -1,33 +1,24 @@
-$font: 'Roboto Slab', serif;
-$border-color: #bbb;
-$content-color: #eee;
-$backing-color: #ddd;
-$alt-color: #ccc;
-$label-color: hsl(47deg, 100%, 57%);
-$link-color: hsl(212deg, 61%, 42%);
-$hover-color: hsl(47deg, 100%, 42%);
+@import 'default-styles';
 
-@mixin border {
-  border: 1px solid $border-color;
-  border-radius: 3px;
-}
-
-.left-bar {
+//////////////////////////////* SIDEBAR SETUP *////////////////////////////////
+.left-margin {
   width: 31%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
 }
-.right-bar {
+.right-margin {
   width: 31%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+////////////////////////////* BASE CARD STYLES *///////////////////////////////
 .card {
   @include border;
+  background-color: $color-body;
   width: 200px;
   margin: 0 10px 10px 10px;
   display: flex;
@@ -35,21 +26,28 @@ $hover-color: hsl(47deg, 100%, 42%);
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  font-family: $font;
-  background-color: $content-color;
+}
+.card-content {
+  @include link;
+  @include font($font-body);
+  width: 100%;
+
+  hr {
+    width: 190px;
+  }
 }
 .card-label {
   @include border;
+  @include font($font-header);
+  background-color: $color-header;
   width: 100%;
   margin: 0;
-  background-color: hsl(47deg, 100%, 57%);
   border-left: none;
   border-right: none;
-  font-size: 16px;
   font-weight: bold;
 
   a {
-    color: black;
+    color: $color-font-label;
     text-decoration: none;
   }
   .icon {
@@ -57,35 +55,18 @@ $hover-color: hsl(47deg, 100%, 42%);
     margin: 3px;
   }
 }
-.card-content {
-  width: 100%;
-  font-size: 12px;
-  line-height: 18px;
-
-  a:link, a:visited {
-    text-decoration: none;
-    color: $link-color;
-  }
-  a:hover, a:active {
-    color: $hover-color;
-  }
-  hr {
-    width: 190px;
-    color: $border-color;
-  }
-}
-.sub-label {
+.card-subtitle {
+  @include font($font-subtitle);
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 14px!important;
 }
 .icon {
-  color: black!important;
+  color: $color-icon;
   cursor: pointer;
 }
-/* AVATAR SECTION */
+////////////////////////////* AVATAR SECTION */////////////////////////////////
 .avatar {
   display: flex;
   align-items: center;
@@ -93,12 +74,15 @@ $hover-color: hsl(47deg, 100%, 42%);
 }
 .avatar-photo {
   @include border;
+  background-color: $color-dark-backing;
   width: 50px;
   height: 50px;
   margin: 5px;
-  background-color: $backing-color;
 }
 .change-avatar {
+  @include font(10px);
+  color: $color-body;
+  background-color: $color-item-hover;
   width: 50px;
   height: 50px;
   margin: 1px;
@@ -107,22 +91,19 @@ $hover-color: hsl(47deg, 100%, 42%);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $content-color;
-  font-size: 10px;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 .avatar-photo:hover .change-avatar {
   visibility: visible!important;
   cursor: pointer;
 }
-/* PET SECTION */
+////////////////////////////////* PET SECTION *////////////////////////////////
 .pet-photo {
   @include border;
+  background-color: $color-dark-backing;
   width: 188px;
   height: 188px;
   margin: 5px;
-  background-color: $backing-color;
 
   img {
     width: 188px;
@@ -146,14 +127,24 @@ $hover-color: hsl(47deg, 100%, 42%);
     text-align: left;
   }
 }
+.green {
+  color: $color-health-high!important;
+}
+.yellow {
+  color: $color-health-med!important;
+}
+.red {
+  color: $color-health-low!important;
+}
+/////////////////////////////* FRIENDS SECTION *///////////////////////////////
 .friend {
   @include border;
+  background-color: $color-light-backing;
   margin: 10px;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $backing-color;
 }
 .friend-avatar {
   margin: 0 5px 0 0;
@@ -168,22 +159,23 @@ $hover-color: hsl(47deg, 100%, 42%);
   }
 }
 .friend-info {
+  background-color: $color-dark-backing;
   flex: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $alt-color;
 
   h1 {
-    font-size: 14px;
+    @include font(14px);
     margin: 0;
 
     a {
-      color: #000!important;
+      color: $color-font-label!important;
     }
   }
 }
+///////////////////////////////* GAMES SECTION *///////////////////////////////
 .games {
   margin: 5px;
   display: flex;
@@ -193,19 +185,19 @@ $hover-color: hsl(47deg, 100%, 42%);
 }
 .games-item {
   @include border;
+  background-color: $color-light-backing;
   margin: 5px;
   padding: 5px 5px 1px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $backing-color;
-  font-size: 11px;
 
   img {
     max-width: 40px;
     max-height: 40px;
   }
 }
+/////////////////////////////////* AD SECTION *////////////////////////////////
 .ad-space {
   max-width: 200px;
   max-height: 320px;
@@ -216,17 +208,18 @@ $hover-color: hsl(47deg, 100%, 42%);
   justify-content: center;
 
   img, a {
+    background-color: $color-dark-backing;
     width: 200px;
     height: 135px;
     object-fit: cover;
-    background-color: $backing-color;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
   }
   span {
-    font-size: 10px;
+    @include font(10px);
   }
 }
+///////////////////////////////* FOOTER SECTION *//////////////////////////////
 .footer {
   padding: 5px;
 }

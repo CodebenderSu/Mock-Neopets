@@ -6,7 +6,7 @@ import FriendCard from './FriendCard';
 class LeftBar extends Component {
   render() {
     return (
-      <div className="left-bar">
+      <div className="left-margin">
         <UserCard />
         <PetCard />
         <FriendCard />

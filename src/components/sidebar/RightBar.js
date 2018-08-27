@@ -6,7 +6,7 @@ import FooterCard from './FooterCard';
 class RightBar extends Component {
   render() {
     return (
-      <div className="right-bar">
+      <div className="right-margin">
         <GameCard />
         <AdCard />
         <FooterCard />

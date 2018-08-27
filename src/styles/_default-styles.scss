@@ -1,0 +1,37 @@
+$font-family: 'Roboto Slab', serif;
+$font-header: 16px;
+$font-subtitle: 14px;
+$font-body: 12px;
+$color-header: hsl(47deg, 100%, 57%); // goldenrod
+$color-header-border: hsl(47deg, 100%, 47%); // dark goldenrod
+$color-header-item: hsl(47deg, 100%, 77%); // light goldenrod
+$color-body: #eee; // almost white
+$color-light-backing: #ddd; // lighter grey
+$color-dark-backing: #ccc; // light grey
+$color-border: #bbb; // grey
+$color-icon: #000; // black
+$color-font-label: #000; // black
+$color-item-hover: rgba(0, 0, 0, 0.4); // transparent black
+$color-link-default: hsl(212deg, 61%, 42%); // blue
+$color-link-hover: hsl(47deg, 100%, 42%); // gold
+$color-health-high: green; // green
+$color-health-med: yellow; // yellow
+$color-health-low: red; // red
+
+@mixin border {
+  border: 1px solid $color-border;
+  border-radius: 3px;
+}
+@mixin font($size) {
+  font-family: $font-family;
+  font-size: $size;
+}
+@mixin link {
+  a:link, a:visited {
+    text-decoration: none;
+    color: $color-link-default;
+  }
+  a:hover, a:active {
+    color: $color-link-hover;
+  }
+}
