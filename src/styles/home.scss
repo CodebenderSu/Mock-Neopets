@@ -1,3 +1,5 @@
+@import 'default-styles';
+
 .home-master {
   width: 38%;
   display: flex;
@@ -47,4 +49,30 @@
   background-color: #ccc;
   border: 1px solid #bbb;
   border-radius: 3px;
+}
+//////////////////// UNDER CONSTRUCTION ////////////////////
+.construction {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  overflow: auto;
+  z-index: 100;
+}
+.construction-content {
+  @include font(18px);
+  width: 300px;
+  height: 200px;
+  margin: 15% auto;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background-color: #b53030;
+  border: 3px solid #722323;
+  border-radius: 5px;
+}
+.construction span {
+  float: right;
+  color: #fff;
+  cursor: pointer;
 }

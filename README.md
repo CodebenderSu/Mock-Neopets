@@ -15,6 +15,7 @@ The Neopets homepage is incredibly basic and outdated, so bringing my mockup ver
 * **The Design Layout** - The Neopets website design feels nostalgic and cluttered. I created a rough draft layout schematic with the intent of condensing page content while simultaneously modernizing it. So far I'm loosely implementing this draft, as some components may end up feeling redundant.
 * **The Navbar** - The dropdown menus of the Neopets navbar are needlessly messy. If I were to be recreating more of the Neopets site than just the homepage, I would propose organizing the the dropdown content of each category into a single page, accessible through a "tab" on the navbar, similar to various social media apps. In the meantime, I've simply opted for a nice FontAwesome icon and text that would theoretically link to such pages.
 * **The Clock** - The Neopets clock is basic and falls behind when you linger on the page for too long. I've utilized the Moment-Timezone library within React to create a more accurate live clock.
+* **Neofriends** - The Neofriends sidebar section on Neopets feels static. I've opted for a button that can toggle the module open and close, to show online friends. I've also fleshed it out with more potential interactions an end user could utilize, such as visiting a friend's shop or Neohome.
 
 ## Dependencies
 * React.js
