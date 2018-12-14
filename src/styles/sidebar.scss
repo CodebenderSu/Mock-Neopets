@@ -148,12 +148,11 @@
 }
 .friend-avatar {
   margin: 0 5px 0 0;
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  img, a {
+  img {
     width: 50px;
     height: 50px;
   }
@@ -186,16 +185,35 @@
 .games-item {
   @include border;
   background-color: $color-light-backing;
-  margin: 5px;
-  padding: 5px 5px 1px 5px;
+  padding: 1px;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    max-width: 40px;
-    max-height: 40px;
+    width: 40px;
+    height: 40px;
   }
+}
+.change-game {
+  @include font(10px);
+  color: $color-body;
+  background-color: $color-item-hover;
+  width: 52px;
+  height: 52px;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.games-item:hover .change-game {
+  visibility: visible!important;
+  cursor: pointer;
 }
 /////////////////////////////////* AD SECTION *////////////////////////////////
 .ad-space {

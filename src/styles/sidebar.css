@@ -143,11 +143,10 @@
 
 .friend-avatar {
   margin: 0 5px 0 0;
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .friend-avatar img, .friend-avatar a {
+  .friend-avatar img {
     width: 50px;
     height: 50px; }
 
@@ -176,14 +175,34 @@
   border: 1px solid #bbb;
   border-radius: 3px;
   background-color: #ddd;
-  margin: 5px;
-  padding: 5px 5px 1px 5px;
+  padding: 1px;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center; }
   .games-item img {
-    max-width: 40px;
-    max-height: 40px; }
+    width: 40px;
+    height: 40px; }
+
+.change-game {
+  font-family: "Roboto Slab", serif;
+  font-size: 10px;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 52px;
+  height: 52px;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold; }
+
+.games-item:hover .change-game {
+  visibility: visible !important;
+  cursor: pointer; }
 
 .ad-space {
   max-width: 200px;

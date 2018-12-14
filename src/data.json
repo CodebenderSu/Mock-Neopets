@@ -62,5 +62,16 @@
       "Name": "Splat-A-Sloth",
       "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/splatasloth.png"
     }
+  ],
+  "Carousel": [
+    {
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/neopetshome.jpg"
+    },
+    {
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/codebendersu.jpg"
+    },
+    {
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/healspring.jpg"
+    }
   ]
 }

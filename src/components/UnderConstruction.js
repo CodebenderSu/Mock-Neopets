@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class UnderConstruction extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: true };
+    this.state = { show: false };
   }
   handleClick = () => {
     this.setState({ show: false });

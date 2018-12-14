@@ -3,7 +3,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch, faUserCircle, faGlobe, faDice, faStore,
         faUsers, faEnvelope, faHome, faShoppingBag, faPaw,
         faUniversity, faDoorClosed, faCaretSquareDown,
-        faCaretSquareUp, faGamepad, faWindowClose } from '@fortawesome/free-solid-svg-icons';
+        faCaretSquareUp, faGamepad, faWindowClose, faArrowsAlt } from '@fortawesome/free-solid-svg-icons';
 import '../styles/header.css';
 import '../styles/home.css';
 import '../styles/sidebar.css';
@@ -16,7 +16,7 @@ import UnderConstruction from './UnderConstruction';
 library.add(faSearch, faUserCircle, faGlobe, faDice, faStore,
             faUsers, faEnvelope, faHome, faShoppingBag, faPaw,
             faUniversity, faDoorClosed, faCaretSquareUp,
-            faCaretSquareDown, faGamepad, faWindowClose);
+            faCaretSquareDown, faGamepad, faWindowClose, faArrowsAlt);
 
 class App extends Component {
   render() {
