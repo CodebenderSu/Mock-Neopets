@@ -4,9 +4,9 @@ import { faSearch, faUserCircle, faGlobe, faDice, faStore,
         faUsers, faEnvelope, faHome, faShoppingBag, faPaw,
         faUniversity, faDoorClosed, faCaretSquareDown,
         faCaretSquareUp, faGamepad, faWindowClose, faArrowsAlt } from '@fortawesome/free-solid-svg-icons';
-import '../styles/header.css';
-import '../styles/home.css';
-import '../styles/sidebar.css';
+import '../styles/header.scss';
+import '../styles/home.scss';
+import '../styles/sidebar.scss';
 import Header from './header/Header';
 import LeftBar from './sidebar/LeftBar';
 import RightBar from './sidebar/RightBar';

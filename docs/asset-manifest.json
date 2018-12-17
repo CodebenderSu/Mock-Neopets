@@ -1,8 +1,18 @@
 {
-  "main.css": "static/css/main.9d5bdc20.css",
-  "main.css.map": "static/css/main.9d5bdc20.css.map",
-  "main.js": "static/js/main.8573a053.js",
-  "main.js.map": "static/js/main.8573a053.js.map",
-  "static\\media\\banner.jpg": "static/media/banner.62e45bef.jpg",
-  "static\\media\\neopets-logo.png": "static/media/neopets-logo.0ae9224b.png"
+  "main.css": "/Mock-Neopets/static/css/main.a06a7b9e.chunk.css",
+  "main.js": "/Mock-Neopets/static/js/main.3835005c.chunk.js",
+  "main.js.map": "/Mock-Neopets/static/js/main.3835005c.chunk.js.map",
+  "static/css/1.ed4dd213.chunk.css": "/Mock-Neopets/static/css/1.ed4dd213.chunk.css",
+  "static/js/1.f9100ef6.chunk.js": "/Mock-Neopets/static/js/1.f9100ef6.chunk.js",
+  "static/js/1.f9100ef6.chunk.js.map": "/Mock-Neopets/static/js/1.f9100ef6.chunk.js.map",
+  "runtime~main.js": "/Mock-Neopets/static/js/runtime~main.38966ad6.js",
+  "runtime~main.js.map": "/Mock-Neopets/static/js/runtime~main.38966ad6.js.map",
+  "static/media/banner.jpg": "/Mock-Neopets/static/media/banner.62e45bef.jpg",
+  "static/media/home.scss": "/Mock-Neopets/static/media/slick.f97e3bbf.svg",
+  "static/media/neopets-logo.png": "/Mock-Neopets/static/media/neopets-logo.0ae9224b.png",
+  "static/css/main.a06a7b9e.chunk.css.map": "/Mock-Neopets/static/css/main.a06a7b9e.chunk.css.map",
+  "static/css/1.ed4dd213.chunk.css.map": "/Mock-Neopets/static/css/1.ed4dd213.chunk.css.map",
+  "index.html": "/Mock-Neopets/index.html",
+  "precache-manifest.931a31fbfd2d0675223cafc2d129858b.js": "/Mock-Neopets/precache-manifest.931a31fbfd2d0675223cafc2d129858b.js",
+  "service-worker.js": "/Mock-Neopets/service-worker.js"
 }
