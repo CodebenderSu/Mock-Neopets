@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
-import { Carousels } from '../../data.json';
 import Slider from 'react-slick';
+import { Tiles } from '../../data.json';
+import CarouselTile from './CarouselTile.js';
 
 class Carousel extends Component {
   render() {
     const settings = {
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 10000,
+      autoplaySpeed: 8000,
       dots: true
     };
+    // Generate Carousel Tiles dynamically!
+    const tiles = Tiles.map((i) =>
+      <CarouselTile key={i.Key} redirect={i.Redirect} span={i.Span}
+        image={i.Image} />
+    );
     return (
       <div className="carousel">
         <Slider {...settings}>
-          <div>
-            <img src={Carousels[0].Image} alt="" />
-          </div>
-          <div>
-            <img src={Carousels[1].Image} alt="" />
-          </div>
-          <div>
-            <img src={Carousels[2].Image} alt="" />
-          </div>
+          {tiles}
         </Slider>
       </div>
     );

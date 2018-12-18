@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Mock-Neopets/precache-manifest.931a31fbfd2d0675223cafc2d129858b.js"
+  "/Mock-Neopets/precache-manifest.3775745ac70aa2c0b44f0adf3801b91d.js"
 );
 
 workbox.clientsClaim();

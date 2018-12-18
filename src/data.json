@@ -63,15 +63,24 @@
       "Avatar": "https://codebendersu.github.io/Mock-Neopets/games/splatasloth.png"
     }
   ],
-  "Carousels": [
+  "Tiles": [
     {
-      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/neopetshome.jpg"
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/neopetshome.jpg",
+      "Redirect": "http://www.neopets.com/",
+      "Span": "Go to the actual Neopets homepage",
+      "Key": "Neopets Home"
     },
     {
-      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/codebendersu.jpg"
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/codebendersu.jpg",
+      "Redirect": "https://codebendersu.github.io/",
+      "Span": "Visit the developer's portfolio!",
+      "Key": "Codebendersu"
     },
     {
-      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/healspring.jpg"
+      "Image": "https://codebendersu.github.io/Mock-Neopets/carousel/healspring.jpg",
+      "Redirect": "",
+      "Span": "Placeholder text",
+      "Key": "Placeholder"
     }
   ]
 }

@@ -1,4 +1,5 @@
 $font-family: 'Roboto Slab', serif;
+$font-carousel: 20px;
 $font-header: 16px;
 $font-subtitle: 14px;
 $font-body: 12px;
@@ -11,6 +12,7 @@ $color-dark-backing: #ccc; // light grey
 $color-border: #bbb; // grey
 $color-icon: #000; // black
 $color-font-label: #000; // black
+$color-font-inverted: #fff; // white
 $color-item-hover: rgba(0, 0, 0, 0.4); // transparent black
 $color-link-default: hsl(212deg, 61%, 42%); // blue
 $color-link-hover: hsl(47deg, 100%, 42%); // gold
@@ -21,6 +23,12 @@ $color-health-low: red; // red
 @mixin border {
   border: 1px solid $color-border;
   border-radius: 3px;
+}
+@mixin border-font-carousel {
+  border-top: 2px solid $color-icon;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid $color-icon;
 }
 @mixin font($size) {
   font-family: $font-family;

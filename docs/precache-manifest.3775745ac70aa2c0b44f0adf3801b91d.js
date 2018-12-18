@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/Mock-Neopets/static/media/neopets-logo.0ae9224b.png"
   },
   {
-    "revision": "3835005c0d89fb498912",
-    "url": "/Mock-Neopets/static/css/main.a06a7b9e.chunk.css"
+    "revision": "61f8c1c897f33cfcbd95",
+    "url": "/Mock-Neopets/static/css/main.1fcefca9.chunk.css"
   },
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
@@ -24,12 +24,8 @@ self.__precacheManifest = [
     "url": "/Mock-Neopets/static/media/banner.62e45bef.jpg"
   },
   {
-    "revision": "3835005c0d89fb498912",
-    "url": "/Mock-Neopets/static/js/main.3835005c.chunk.js"
-  },
-  {
-    "revision": "ced611daf7709cc778da928fec876475",
-    "url": "/Mock-Neopets/static/media/slick.ced611da.eot"
+    "revision": "61f8c1c897f33cfcbd95",
+    "url": "/Mock-Neopets/static/js/main.61f8c1c8.chunk.js"
   },
   {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
@@ -40,11 +36,15 @@ self.__precacheManifest = [
     "url": "/Mock-Neopets/static/media/slick.d41f55a7.ttf"
   },
   {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/Mock-Neopets/static/media/slick.ced611da.eot"
+  },
+  {
     "revision": "f9100ef677c4a3f0ad51",
     "url": "/Mock-Neopets/static/css/1.ed4dd213.chunk.css"
   },
   {
-    "revision": "28babd1b2b5f516c5abe7635b55bd45c",
+    "revision": "19293adb056105be2364400cbf16bee3",
     "url": "/Mock-Neopets/index.html"
   }
 ];
