@@ -23,7 +23,7 @@ class GameCard extends Component {
           </div>
           <hr />
           <div className="card-subtitle">
-            <a href="">
+            <a href="https://codebendersu.github.io/Mock-Neopets/">
               <FontAwesomeIcon className="icon" icon="gamepad" />
               {} All games
             </a>

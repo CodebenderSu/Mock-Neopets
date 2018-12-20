@@ -45,11 +45,11 @@ class FriendCard extends Component {
           {drawer}
           <hr />
           <div className="card-subtitle">
-            <a href="">
+            <a href="https://codebendersu.github.io/Mock-Neopets/">
               <FontAwesomeIcon className="icon" icon="users" />
               {} Neofriends
             </a>
-            <a href="">
+            <a href="https://codebendersu.github.io/Mock-Neopets/">
               <FontAwesomeIcon className="icon" icon="envelope" />
               {} Neomail
             </a>

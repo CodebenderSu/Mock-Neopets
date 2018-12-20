@@ -12,7 +12,7 @@ class Header extends Component {
         <div className="header-container">
           <div className="header-left">
             <img className="banner" src={banner} alt="banner" />
-            <a href=""><img src={logo} alt="Neopets" /></a>
+            <a href="https://codebendersu.github.io/Mock-Neopets/"><img src={logo} alt="Neopets" /></a>
           </div>
           <div className="header-center">
             <Navigation />

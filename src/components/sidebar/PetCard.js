@@ -8,7 +8,7 @@ class PetCard extends Component {
     return (
       <div className="card">
         <div className="card-label">
-          <a href="">{Pet.Name}</a>
+          <a href="https://codebendersu.github.io/Mock-Neopets/">{Pet.Name}</a>
         </div>
         <div className="card-content">
           <div className="pet-photo">
@@ -18,11 +18,11 @@ class PetCard extends Component {
           <PetStats />
           <hr />
           <div className="card-subtitle">
-            <a href="">
+            <a href="https://codebendersu.github.io/Mock-Neopets/">
               <FontAwesomeIcon className="icon" icon="paw" />
               {} Pets
             </a>
-            <a href="">
+            <a href="https://codebendersu.github.io/Mock-Neopets/">
               <FontAwesomeIcon className="icon" icon="door-closed" />
               {} Closet
             </a>
